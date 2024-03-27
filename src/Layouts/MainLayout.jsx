@@ -1,15 +1,15 @@
+import { Outlet } from "react-router-dom";
+import Navber from "../Components/Navber";
 
 
 const MainLayout = () => {
   return (
-    <div>
-      <ul><li>navbar</li>
-      <li>outlet-
+    <div className="max-w-7xl mx-auto">
+     <Navber></Navber>
 
-       <div>home, listed books , pages to read</div> 
-
-      </li>
-      </ul>
+      
+<Outlet></Outlet>
+      
     </div>
   );
 };
