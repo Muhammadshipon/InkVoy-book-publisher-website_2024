@@ -7,7 +7,9 @@ import Categories from "../Pages/Categories";
 import Authors from "../Pages/Authors";
 import BookDetails from "../Pages/BookDetails";
 import Read from "../Pages/Read";
-import WishToRead from "../Pages/WishToRead";
+import WishToReadBooks from "../Pages/WishToReadBooks";
+
+
 
 
 export const router = createBrowserRouter([
@@ -29,9 +31,10 @@ export const router = createBrowserRouter([
           element: <Read></Read>
         },
         {
-          path: "wish-to-read",
-          element: <WishToRead></WishToRead>
+          path:"wish-to-read",
+          element: <WishToReadBooks></WishToReadBooks>
         }
+        
         ]
       },
       {
