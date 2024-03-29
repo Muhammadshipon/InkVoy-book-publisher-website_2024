@@ -1,9 +1,13 @@
+import App from "../Components/App";
+
+
 
 
 const PagesToRead = () => {
   return (
     <div>
-      THIS IS PAGES TO READ
+     
+  <App></App>
     </div>
   );
 };

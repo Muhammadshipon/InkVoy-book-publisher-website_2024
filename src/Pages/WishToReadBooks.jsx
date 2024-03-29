@@ -1,9 +1,17 @@
 import { useEffect, useState } from "react";
 import { getWishToReadBooks } from "../utility/BookList";
 import WishBook from "../Components/WishBook";
+import { useOutletContext } from "react-router-dom";
 
 const WishToReadBooks = () => {
+  const display = useOutletContext()
   const [books,setBooks] =useState([]);
+
+useEffect(()=>{
+  setBooks(display);
+},[display])
+
+
   useEffect(()=>{
    const wishToReadBooks = getWishToReadBooks();
    setBooks(wishToReadBooks);

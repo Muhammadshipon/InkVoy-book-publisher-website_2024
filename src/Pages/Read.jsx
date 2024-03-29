@@ -1,16 +1,42 @@
-import { useEffect, useState } from "react";
-import { getReadBooks } from "../utility/BookList";
+
+
 import ReadBook from "../Components/ReadBook";
 
 
+import { useEffect, useState } from "react";
+
+import { useOutletContext } from "react-router-dom";
+import { getReadBooks } from "../utility/BookList";
+
+
+
 const Read = () => {
+    
+ const display = useOutletContext()
+
+ console.log(display);
+
+ 
   const [books,setBooks] =useState([]);
-  useEffect(()=>{
-   const readBooks = getReadBooks();
-   setBooks(readBooks);
    
-  },[]) 
-  console.log(books);
+
+  
+
+  useEffect(()=>{
+
+   setBooks(display);
+ 
+   
+  },[ display]) 
+
+
+
+  useEffect(()=>{
+    const readBooks = getReadBooks();
+    setBooks(readBooks);
+  },[])
+  
+
   
   return (
     <div>
