@@ -2,6 +2,7 @@ import { IoMdTime } from "react-icons/io";
 import { IoPeople } from "react-icons/io5";
 import { FaFileAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types'; 
 const ReadBook = ({book}) => {
   const {bookId,bookName,author,image,totalPages,rating,category,tags,publisher,yearOfPublishing} = book;
   return (
@@ -53,5 +54,9 @@ const ReadBook = ({book}) => {
 </div>
   );
 };
+
+ReadBook.propTypes ={
+  book: PropTypes.object.isRequired
+}
 
 export default ReadBook;

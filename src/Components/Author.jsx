@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types'; 
 
 const Author = ({author}) => {
   const {name,nationality,notable_works,awards,website,image,email} =author
@@ -21,7 +21,7 @@ const Author = ({author}) => {
       <li>{notable_works[2]}</li>
       
       </ul></h4>
-     <h4> <span className="font-bold" >Awards:</span>{awards.map(a=><p>{a}</p>)}</h4>
+     <h4> <span className="font-bold" >Awards:</span>{awards.map((a,idx)=><p key={idx}>{a}</p>)}</h4>
      <p>{website}</p>
     </div>
 
@@ -71,4 +71,7 @@ const Author = ({author}) => {
   );
 };
 
+Author.propTypes ={
+  author: PropTypes.object.isRequired
+}
 export default Author;

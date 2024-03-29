@@ -1,9 +1,9 @@
 import { IoIosStarHalf } from "react-icons/io";
 import { Link } from "react-router-dom";
-
+import PropTypes from 'prop-types'; 
 const Book = ({book}) => {
   // console.log(book)
-  const {bookId,bookName,author,image,review,totalPages,rating,category,tags,publisher,yearOfPublishing} = book;
+  const {bookId,bookName,author,image,rating,category,tags} = book;
   return (
    <Link to={`/book-details/${bookId}`}>
     <div className="max-w-xs p-6 rounded-md shadow-md dark:bg-gray-50 dark:text-gray-900  hover:border-blue-600 border-2 hover:scale-105">
@@ -29,4 +29,7 @@ const Book = ({book}) => {
   );
 };
 
+Book.propTypes ={
+  book: PropTypes.object.isRequired
+}
 export default Book;
