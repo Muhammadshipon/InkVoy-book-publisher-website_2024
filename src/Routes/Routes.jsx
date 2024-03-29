@@ -11,6 +11,7 @@ import WishToReadBooks from "../Pages/WishToReadBooks";
 import Technology from "../Pages/Technology";
 import Fantasy from "../Pages/Fantasy";
 import Fiction from "../Pages/Fiction";
+import Error from "../Pages/Error";
 
 
 
@@ -19,6 +20,7 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+   errorElement:<Error></Error>,
     children: [
       {
         path: "/",
