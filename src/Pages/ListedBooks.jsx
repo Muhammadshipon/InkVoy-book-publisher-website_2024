@@ -74,9 +74,9 @@ const ListedBooks = () => {
    
 
 
-      <div role="tablist" className="tabs tabs-lifted w-56">
-  <Link to={''} role="tab" onClick={()=> setTabIndex(0)} className={` ${tabIndex===0?'tab tab-active text-blue-600 font-semibold text-xl ':'tab text-xl '} `}>Read</Link>
-  <Link to={'wish-to-read'} role="tab" onClick={()=> setTabIndex(1)} className={` ${tabIndex===1?'tab-active tab text-blue-600 font-semibold text-xl ':'tab text-xl '}`}>Wish To List</Link>
+      <div role="tablist" className="tabs tabs-lifted w-56 font-bold">
+  <Link to={''} role="tab" onClick={()=> setTabIndex(0)} className={` ${tabIndex===0?'tab tab-active text-blue-600 font-bold text-xl ':'tab text-xl '} `}>Read</Link>
+  <Link to={'wish-to-read'} role="tab" onClick={()=> setTabIndex(1)} className={` ${tabIndex===1?'tab-active tab text-blue-600 font-bold text-xl ':'tab text-xl '}`}>Wish To List</Link>
   
 </div>
 

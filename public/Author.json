@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Jhankar Mahbub",
+    "nationality": "Bangladeshi",
+    "notable_works": ["Harry Potter series"],
+    "awards": ["Order of the British Empire", "Hans Christian Andersen Literature Award"],
+    "website": "https://www.jhankarmahbub.com/",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeVDllUA0IXQ_soWafWYpgsOVZznTiNH_Pu2jRVE7618DrDoMFtBkV3qXasQ&s",
+    "email": "jhankarmahbub@gmail.com"
+  },
+  {
+    "id": 2,
+    "name": "Stephen King",
+    "nationality": "American",
+    "notable_works": ["The Shining", "It", "The Dark Tower series"],
+    "awards": ["Bram Stoker Awards", "National Book Foundation Medal for Distinguished Contribution to American Letters"],
+    "website": "https://stephenking.com/",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp1C9PcVRxhoG6fzBkjDHHUEnoqmNLsg8-tVf77ZaTBOyFB7kw3DUhHSO1zIEkrUnuGpE&usqp=CAU",
+    "email": "stephenking@example.com"
+  },
+  {
+    "id": 3,
+    "name": "Margaret Atwood",
+    "nationality": "Canadian",
+    "notable_works": ["The Handmaid's Tale", "Oryx and Crake", "The Testaments"],
+    "awards": ["Booker Prize", "Governor General's Award", "Arthur C. Clarke Award"],
+    "website": "https://margaretatwood.ca/",
+    "image": "https://images.saymedia-content.com/.image/t_share/MTc0NjQ3OTU5NzIyNzk2ODE1/top-10-living-writers-of-the-world.jpg",
+    "email": "margaretatwood@example.com"
+  },
+  {
+    "id": 4,
+    "name": "Haruki Murakami",
+    "nationality": "Japanese",
+    "notable_works": ["Norwegian Wood", "Kafka on the Shore", "1Q84"],
+    "awards": ["Jerusalem Prize", "Franz Kafka Prize", "World Fantasy Award"],
+    "website": "https://www.harukimurakami.com/",
+    "image": "https://media.vanityfair.com/photos/5fce88bd43510e5d55ee434a/master/pass/Trump12.7.jpg",
+    "email": "harukimurakami@example.com"
+  },
+  {
+    "id": 5,
+    "name": "Toni Morrison",
+    "nationality": "American",
+    "notable_works": ["Beloved", "Song of Solomon", "The Bluest Eye"],
+    "awards": ["Nobel Prize in Literature", "Pulitzer Prize", "Presidential Medal of Freedom"],
+    "website": "No official website",
+    "image": "https://i.ytimg.com/vi/f8rJpYY1VDk/hqdefault.jpg",
+    "email": "tonimorrison@example.com"
+  }
+]

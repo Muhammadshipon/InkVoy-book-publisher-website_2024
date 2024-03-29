@@ -1,9 +1,14 @@
+import { useLoaderData } from "react-router-dom";
 
 
 const Authors = () => {
+  const authors = useLoaderData();  
+  console.log(authors);
   return (
     <div>
-      He is Aurthor
+     {
+      authors.map(author=>)
+     }
     </div>
   );
 };

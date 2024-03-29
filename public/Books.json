@@ -1,6 +1,58 @@
 [
   {
   "bookId": 1,
+  "bookName": "প্রোগ্রামিংয়ের চৌদ্দগোষ্ঠী",
+  "author": "Jhankar Mahbub",
+  "image": "https://m.media-amazon.com/images/I/41ifBtAoOcL.jpg",
+  "review": "A monumental work of literature, 'Moby-Dick' is a sprawling epic that delves into the complexities of human nature, obsession, and the inexorable forces of fate. Herman Melville's magnum opus transports readers to the heart of the 19th-century whaling industry, immersing them in the harsh realities of life at sea. At its core, 'Moby-Dick' is a story of Captain Ahab's relentless pursuit of the enigmatic white whale, Moby Dick, a quest that becomes a metaphor for humanity's eternal struggle against the unknowable and the uncontrollable. Through vivid prose and philosophical musings, Melville explores themes of revenge, madness, and the limits of human ambition, all set against the backdrop of the vast and unforgiving ocean. With its richly drawn characters and timeless themes, 'Moby-Dick' continues to captivate readers and inspire scholars, cementing its status as one of the greatest novels ever written.",
+  "totalPages": 180,
+  "rating": 4.9,
+  "category": "Technology",
+  "tags": ["Classic", "Romance", "Drama"],
+  "publisher": "Charles Scribner's Sons",
+  "yearOfPublishing": 1925
+  },
+  {
+  "bookId": 2,
+  "bookName": "Habluder Jonno Programming",
+  "author": "Jhankar Mahbub",
+  "image": "https://media.e-valy.com/cms/products/images/c1553ea3-8eb4-48ce-8f18-68a91f661fe6",
+  "review": "A monumental work of literature, 'Moby-Dick' is a sprawling epic that delves into the complexities of human nature, obsession, and the inexorable forces of fate. Herman Melville's magnum opus transports readers to the heart of the 19th-century whaling industry, immersing them in the harsh realities of life at sea. At its core, 'Moby-Dick' is a story of Captain Ahab's relentless pursuit of the enigmatic white whale, Moby Dick, a quest that becomes a metaphor for humanity's eternal struggle against the unknowable and the uncontrollable. Through vivid prose and philosophical musings, Melville explores themes of revenge, madness, and the limits of human ambition, all set against the backdrop of the vast and unforgiving ocean. With its richly drawn characters and timeless themes, 'Moby-Dick' continues to captivate readers and inspire scholars, cementing its status as one of the greatest novels ever written.",
+  "totalPages": 180,
+  "rating": 4.5,
+  "category": "Technology",
+  "tags": ["Classic", "Romance", "Drama"],
+  "publisher": "Charles Scribner's Sons",
+  "yearOfPublishing": 1925
+  },
+  {
+  "bookId": 3,
+  "bookName": "Programming Bolod To Boss",
+  "author": "Jhankar Mahbub",
+  "image": "https://media.e-valy.com/cms/products/images/b916024d-0b66-4ea6-ae93-b206a5ede812",
+  "review": "A monumental work of literature, 'Moby-Dick' is a sprawling epic that delves into the complexities of human nature, obsession, and the inexorable forces of fate. Herman Melville's magnum opus transports readers to the heart of the 19th-century whaling industry, immersing them in the harsh realities of life at sea. At its core, 'Moby-Dick' is a story of Captain Ahab's relentless pursuit of the enigmatic white whale, Moby Dick, a quest that becomes a metaphor for humanity's eternal struggle against the unknowable and the uncontrollable. Through vivid prose and philosophical musings, Melville explores themes of revenge, madness, and the limits of human ambition, all set against the backdrop of the vast and unforgiving ocean. With its richly drawn characters and timeless themes, 'Moby-Dick' continues to captivate readers and inspire scholars, cementing its status as one of the greatest novels ever written.",
+  "totalPages": 180,
+  "rating": 4.5,
+  "category": "Technology",
+  "tags": ["Classic", "Romance", "Drama"],
+  "publisher": "Charles Scribner's Sons",
+  "yearOfPublishing": 1925
+  },
+  {
+  "bookId": 4,
+  "bookName": "Recharge Your Down Battery",
+  "author": "Jhankar Mahbub",
+  "image": "https://media.e-valy.com/cms/products/images/332e3cd2-b5f4-4a29-8f2a-553065d4ed6e",
+  "review": "A monumental work of literature, 'Moby-Dick' is a sprawling epic that delves into the complexities of human nature, obsession, and the inexorable forces of fate. Herman Melville's magnum opus transports readers to the heart of the 19th-century whaling industry, immersing them in the harsh realities of life at sea. At its core, 'Moby-Dick' is a story of Captain Ahab's relentless pursuit of the enigmatic white whale, Moby Dick, a quest that becomes a metaphor for humanity's eternal struggle against the unknowable and the uncontrollable. Through vivid prose and philosophical musings, Melville explores themes of revenge, madness, and the limits of human ambition, all set against the backdrop of the vast and unforgiving ocean. With its richly drawn characters and timeless themes, 'Moby-Dick' continues to captivate readers and inspire scholars, cementing its status as one of the greatest novels ever written.",
+  "totalPages": 180,
+  "rating": 4.5,
+  "category": "Technology",
+  "tags": ["Classic", "Romance", "Drama"],
+  "publisher": "Charles Scribner's Sons",
+  "yearOfPublishing": 1925
+  },
+  {
+  "bookId": 5,
   "bookName": "The Great Gatsby",
   "author": "F. Scott Fitzgerald",
   "image": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781524879761/the-great-gatsby-9781524879761_hr.jpg",
@@ -13,7 +65,7 @@
   "yearOfPublishing": 1925
   },
   {
-  "bookId": 2,
+  "bookId": 6,
   "bookName": "1984",
   "author": "George Orwell",
   "image": "https://www.shutterstock.com/image-photo/closeup-novel-by-george-orwell-260nw-1980665363.jpg",
@@ -26,7 +78,7 @@
   "yearOfPublishing": 1949
   },
   {
-  "bookId": 3,
+  "bookId": 7,
   "bookName": "To Kill a Mockingbird",
   "author": "Harper Lee",
   "image": "https://books.google.com.bd/books/publisher/content?id=_LyTCgAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2PDUkjLubxyTF74uFMhClFwC_0nQ&w=1280",
@@ -39,7 +91,7 @@
   "yearOfPublishing": 1960
   },
   {
-  "bookId": 4,
+  "bookId": 8,
   "bookName": "The Catcher in the Rye",
   "author": "J.D. Salinger",
   "image": "https://images.squarespace-cdn.com/content/v1/5d9a3e73571ba84cd8112c8b/1614713244958-IXJ5SQ8HKD3N5P13GTBR/IMG_6359.jpg",
@@ -52,7 +104,7 @@
   "yearOfPublishing": 1951
   },
   {
-  "bookId": 5,
+  "bookId": 9,
   "bookName": "Pride and Prejudice",
   "author": "Jane Austen",
   "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQITc2Z8x8hgJ4BJALHX-OoK6YSgc2miBq_KitFyMcAYw&s",
@@ -65,7 +117,7 @@
   "yearOfPublishing": 1813
   },
   {
-  "bookId": 6,
+  "bookId": 10,
   "bookName": "The Hobbit",
   "author": "J.R.R. Tolkien",
   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Un_hobbit.jpg/552px-Un_hobbit.jpg",
@@ -78,7 +130,7 @@
   "yearOfPublishing": 1937
   },
   {
-  "bookId": 7,
+  "bookId": 11,
   "bookName": "Crime and Punishment",
   "author": "Fyodor Dostoevsky",
   "image": "https://imagessl4.casadellibro.com/a/l/s5/24/9789387826724.webp",
@@ -91,7 +143,7 @@
   "yearOfPublishing": 1866
   },
   {
-  "bookId": 8,
+  "bookId": 12,
   "bookName": "The Lord of the Rings",
   "author": "J.R.R. Tolkien",
   "image": "https://static.tvtropes.org/pmwiki/pub/images/lotrposter_1.jpg",
@@ -104,7 +156,7 @@
   "yearOfPublishing": 1954
   },
   {
-  "bookId": 9,
+  "bookId": 13,
   "bookName": "Moby-Dick",
   "author": "Herman Melville",
   "image": "https://upload.wikimedia.org/wikipedia/uk/9/9a/Moby_Dick.jpg",
@@ -112,6 +164,19 @@
   "totalPages": 625,
   "rating": 4.7,
   "category": "Fiction",
+  "tags": ["Adventure", "Sea Story", "Literary"],
+  "publisher": "Richard Bentley",
+  "yearOfPublishing": 1851
+  },
+  {
+  "bookId": 14,
+  "bookName": "Hate kolome Js",
+  "author": "Zunayed Ahmed",
+  "image": "https://static-01.daraz.com.bd/p/c50797709c21affb9f41540409484d6f.jpg",
+  "review": "A monumental work of literature, 'Moby-Dick' is a sprawling epic that delves into the complexities of human nature, obsession, and the inexorable forces of fate. Herman Melville's magnum opus transports readers to the heart of the 19th-century whaling industry, immersing them in the harsh realities of life at sea. At its core, 'Moby-Dick' is a story of Captain Ahab's relentless pursuit of the enigmatic white whale, Moby Dick, a quest that becomes a metaphor for humanity's eternal struggle against the unknowable and the uncontrollable. Through vivid prose and philosophical musings, Melville explores themes of revenge, madness, and the limits of human ambition, all set against the backdrop of the vast and unforgiving ocean. With its richly drawn characters and timeless themes, 'Moby-Dick' continues to captivate readers and inspire scholars, cementing its status as one of the greatest novels ever written.",
+  "totalPages": 625,
+  "rating": 4.7,
+  "category": "Technology",
   "tags": ["Adventure", "Sea Story", "Literary"],
   "publisher": "Richard Bentley",
   "yearOfPublishing": 1851

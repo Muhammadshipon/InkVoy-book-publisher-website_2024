@@ -28,7 +28,7 @@ const Navber = () => {
             {links}
           </ul>
         </div>
-        <a className=" flex items-center text-blue-700"><img src="/src/assets/BookIcon.png" width={"100px"} alt="" /><h2 className=" text-2xl md:text-4xl font-serif font-extrabold"><span>Ink</span>Voy</h2></a>
+        <a className="-right-10 flex items-center text-blue-700"><img src="/src/assets/BookIcon.png" className="w-10 lg:w-24" alt="" /><h2 className=" text-2xl md:text-4xl font-serif font-extrabold"><span>Ink</span>Voy</h2></a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="gap-8 font-semibold menu-horizontal px-1 text-blue-600">

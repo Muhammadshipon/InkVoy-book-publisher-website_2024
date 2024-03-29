@@ -8,6 +8,9 @@ import Authors from "../Pages/Authors";
 import BookDetails from "../Pages/BookDetails";
 import Read from "../Pages/Read";
 import WishToReadBooks from "../Pages/WishToReadBooks";
+import Technology from "../Pages/Technology";
+import Fantasy from "../Pages/Fantasy";
+import Fiction from "../Pages/Fiction";
 
 
 
@@ -43,10 +46,29 @@ export const router = createBrowserRouter([
       },
       {
         path : "/categories",
-        element:<Categories></Categories> 
+        element:<Categories></Categories>,
+        children:[
+          {
+            path:"/categories",
+            element:<Technology></Technology>,
+            loader: ()=> fetch('/Books.json')
+          },
+          {
+            path:"fantasy",
+            element:<Fantasy></Fantasy>,
+            loader: ()=> fetch('/Books.json')
+          },
+          {
+            path:"fiction",
+            element:<Fiction></Fiction>,
+            loader: ()=> fetch('/Books.json')
+          }
+        ]
       },
       {path:"/authors",
-        element:<Authors></Authors>
+        element:<Authors></Authors>,
+        loader:()=> fetch('/Author.json')
+        
       },
       {
         path:"/book-details/:id",
