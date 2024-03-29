@@ -6,7 +6,7 @@ const BannerPart = () => {
     
       <div className="hero min-h-screen ">
   <div className="hero-content flex-col lg:flex-row-reverse justify-around w-full">
-    <img  src="/src/assets/Growing_Through_Struggle-Jhankar_Mahbub.jpg" className="lg:w-[400px] rounded-lg shadow-2xl hover:scale-105 hover:border-red-500 bg-white border-4 border-blue-600" />
+    <img  src="https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/Growing_Through_Struggle-Jhankar_Mahbub-854bc-378857.jpg"  className="lg:w-[400px] rounded-lg shadow-2xl hover:scale-105 hover:border-red-500 bg-white border-4 border-blue-600" />
    
     <div>
       <h1 className="text-6xl font-bold lg:mb-4">Books to freshen up </h1> <h1 className="text-6xl font-bold mb-5">your bookshelf</h1>
