@@ -12,6 +12,9 @@ import Technology from "../Pages/Technology";
 import Fantasy from "../Pages/Fantasy";
 import Fiction from "../Pages/Fiction";
 import Error from "../Pages/Error";
+import SignUp from "../Pages/SignUp";
+import SignIn from "../Pages/SignIn";
+import PrivateRoute from "../PrivateRoutes/PrivateRoute";
 
 
 
@@ -29,7 +32,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/listed-book",
-        element: <ListedBooks></ListedBooks>,
+        element: <PrivateRoute><ListedBooks></ListedBooks></PrivateRoute>,
         children: [
         {
           path:"/listed-book",
@@ -44,7 +47,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/pages-to-read",
-        element: <PagesToRead></PagesToRead>
+        element: <PrivateRoute><PagesToRead></PagesToRead></PrivateRoute>
       },
       {
         path : "/categories",
@@ -74,8 +77,16 @@ export const router = createBrowserRouter([
       },
       {
         path:"/book-details/:id",
-        element:<BookDetails></BookDetails>,
+        element:<PrivateRoute><BookDetails></BookDetails></PrivateRoute>,
         loader:( )=> fetch(`/Books.json`),
+      },
+      {
+        path:"/sign-up",
+        element:<SignUp></SignUp>
+      },
+      {
+        path:"/sign-in",
+        element:<SignIn></SignIn>
       }
      
     ]

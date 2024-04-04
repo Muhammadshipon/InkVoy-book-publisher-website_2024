@@ -4,7 +4,7 @@ const Author = ({author}) => {
   const {name,nationality,notable_works,awards,website,image,email} =author
   console.log(author);
   return (
-    <div className="flex flex-col gap-6 max-w-md p-6 dark:bg-gray-50 dark:text-gray-800 rounded-3xl shadow-2xl hover:border-2 hover:border-blue-100">
+    <div className="flex hover:bg-gray-100 hover:scale-105 flex-col gap-6 max-w-md p-6 dark:bg-gray-50 dark:text-gray-800 rounded-3xl shadow-2xl hover:border-4 hover:border-blue-100">
 	
   <img src={image} alt="" className="flex-shrink-0 object-cover h-64 rounded-sm sm:h-96 dark:bg-gray-500 aspect-square rounded-t-3xl" />
 	

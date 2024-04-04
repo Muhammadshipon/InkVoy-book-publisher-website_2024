@@ -4,12 +4,12 @@ import WishBook from "../Components/WishBook";
 import { useOutletContext } from "react-router-dom";
 
 const WishToReadBooks = () => {
-  const display = useOutletContext()
+  const {displayWishBooks} = useOutletContext()
   const [books,setBooks] =useState([]);
 
 useEffect(()=>{
-  setBooks(display);
-},[display])
+  setBooks(displayWishBooks);
+},[displayWishBooks])
 
 
   useEffect(()=>{

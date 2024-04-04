@@ -2,7 +2,7 @@ import { FaAngleDown } from "react-icons/fa";
 
 import BooksTittle from "../Components/BooksTittle";
 import { Link, Outlet } from "react-router-dom";
-import { getReadBooks} from "../utility/BookList";
+import { getReadBooks, getWishToReadBooks} from "../utility/BookList";
 import { useEffect, useState } from "react";
 
 
@@ -11,8 +11,10 @@ import { useEffect, useState } from "react";
 
 const ListedBooks = () => {
   const [readBooks , setReadBooks] = useState([]);
+  const [wishBooks,setWishBooks] = useState([]);
 
   const [displayReadBooks,setDisplayReadBooks] = useState([]);
+  const [displayWishBooks,setDisplayWishBooks] = useState([]);
 
 
   
@@ -20,12 +22,19 @@ const ListedBooks = () => {
 
     if(input === "Sort By"){
       setDisplayReadBooks(readBooks);
+      setDisplayWishBooks(wishBooks);
     }
     else if (input === "Rating"){
       let descendingByRating =readBooks.sort((a,b)=>{
         return b.rating - a.rating ;
       })
       setDisplayReadBooks(descendingByRating);
+
+
+      let descendingByRating2 =wishBooks.sort((a,b)=>{
+        return b.rating - a.rating ;
+      })
+      setDisplayWishBooks(descendingByRating2);
      
     }
     else if(input === "Publish Year"){
@@ -33,12 +42,24 @@ const ListedBooks = () => {
         return b.yearOfPublishing - a.yearOfPublishing ;
       })
       setDisplayReadBooks(descendingByPublishYear);
+
+
+      let descendingByPublishYear2 = wishBooks.sort((a,b)=>{
+        return b.yearOfPublishing - a.yearOfPublishing ;
+      })
+      setDisplayWishBooks(descendingByPublishYear2);
     }
     else if(input === "Number Of Pages"){
       let descendingByPages = readBooks.sort((a,b)=>{
-        return b.totalPages - a.totalPages ;
+        return b.totalPages - a.totalPages;
     })
     setDisplayReadBooks(descendingByPages);
+
+
+      let descendingByPages2 = wishBooks.sort((a,b)=>{
+        return b.totalPages - a.totalPages;
+    })
+    setDisplayWishBooks(descendingByPages2);
     }
     
    
@@ -48,8 +69,11 @@ const ListedBooks = () => {
   useEffect(()=>{
     const allReadBooks = getReadBooks();
     setReadBooks(allReadBooks);
+
+    const allWishBooks = getWishToReadBooks();
+    setWishBooks(allWishBooks);
     
-  },[ displayReadBooks])
+  },[ displayReadBooks , displayWishBooks])
 
   
 
@@ -82,7 +106,7 @@ const ListedBooks = () => {
 
 
 
-          <Outlet context={displayReadBooks}></Outlet>
+          <Outlet context={{displayReadBooks,displayWishBooks}}></Outlet>
      
     </div>
   );

@@ -12,9 +12,9 @@ import { getReadBooks } from "../utility/BookList";
 
 const Read = () => {
     
- const display = useOutletContext()
+ const {displayReadBooks} = useOutletContext()
 
- console.log(display);
+ console.log(displayReadBooks);
 
  
   const [books,setBooks] =useState([]);
@@ -24,10 +24,10 @@ const Read = () => {
 
   useEffect(()=>{
 
-   setBooks(display);
+   setBooks(displayReadBooks);
  
    
-  },[ display]) 
+  },[ displayReadBooks]) 
 
 
 

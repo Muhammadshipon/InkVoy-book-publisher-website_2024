@@ -1,15 +1,28 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import {  NavLink } from "react-router-dom";
+import { AuthContext } from "../Provider/AuthProvider";
 
 
 const Navber = () => {
+  const {user,signOutUser} = useContext(AuthContext);
+  // console.log(user.email);
+  const handleSignOut=()=>{
+    signOutUser()
+  }
 
   const links =  <>
    
     <li><NavLink to='/' className={({isActive})=> isActive? 'text-[#23BE0A] font-bold':''}>Home</NavLink></li>
-    <li> <NavLink to='/listed-book' className={({isActive})=> isActive? 'text-[#23BE0A] font-bold':''}>Listed Books</NavLink></li>
-    <li> <NavLink to='/pages-to-read' className={({isActive})=> isActive? 'text-[#23BE0A] font-bold':''}>Pages To Read</NavLink></li>
+   
+   
     <li> <NavLink to='/categories' className={({isActive})=> isActive? 'text-[#23BE0A] font-bold':''}>Category</NavLink></li>
     <li><NavLink to='/authors' className={({isActive})=> isActive? 'text-[#23BE0A] font-bold':''}>Authors</NavLink></li>
+    {
+      user&& <>
+      <li> <NavLink to='/listed-book' className={({isActive})=> isActive? 'text-[#23BE0A] font-bold':''}>Listed Books</NavLink></li>
+      <li> <NavLink to='/pages-to-read' className={({isActive})=> isActive? 'text-[#23BE0A] font-bold':''}>Pages To Read</NavLink></li>
+      </>
+    }
     
                  </>
    
@@ -36,8 +49,15 @@ const Navber = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn bg-blue-600 text-white mr-2 font-bold">Sign In</a>
-        <a className="btn bg-[#23BE0A] text-white font-bold">Sign Up</a>
+        { user?<>
+              <h3 className="font-bold text-sm mr-4">{ user.email}</h3>
+              <NavLink to={"/"}><a onClick={handleSignOut} className="btn hover:text-black hover:scale-105 bg-blue-600 text-white mr-2 font-bold">Sign Out</a></NavLink>
+              </>
+        : <NavLink to={"/sign-in"}><a  className="btn hover:text-black hover:scale-105 bg-blue-600 text-white mr-2 font-bold">Sign In</a></NavLink>
+        }
+     
+        
+        <NavLink to={"/sign-up"}><a className="btn hover:text-black bg-[#23BE0A] hover:scale-105 text-white font-bold">Sign Up</a></NavLink>
       </div>
     </div>
   );
