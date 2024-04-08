@@ -1,6 +1,6 @@
 ### WebSite Name : InkVoy
 
-WebSite Live Link : https://6605996bb8810033c109e396--merry-bienenstitch-830a80.netlify.app/
+WebSite Live Link : https://6612b4b851a9b4c6c097f400--merry-bienenstitch-830a80.netlify.app/
 
 
 Features of the website :
